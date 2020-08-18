@@ -1,29 +1,22 @@
-# README
+# e-plate
 
+System
+====
 * Ruby version 2.6.6
 
-* System dependencies
+* Ruby on Rails 6
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-Name
-====
+* postgre sql
 
 Overview
 
 ## Description
 
+A novel submission site developed by me.
+
 ## Demo
+
+
 
 ## VS. 
 
