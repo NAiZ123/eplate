@@ -1,11 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+* Ruby version 2.6.6
 
 * System dependencies
 
@@ -21,4 +16,29 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+Name
+====
+
+Overview
+
+## Description
+
+## Demo
+
+## VS. 
+
+## Requirement
+
+## Usage
+
+## Install
+
+## Contribution
+
+## Licence
+
+[MIT](LICENCE)
+
+## Author
+
+NAiZ
