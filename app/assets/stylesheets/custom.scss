@@ -1,7 +1,26 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+body {
+  background: url(book.JPG) center center / cover no-repeat fixed;
+}
+
+
+
+
+header {
+  padding: 5px;
+  background-color: #448888;
+  color: #eeeeee;
+  span.logo-mark {
+    front-weight: bold;
+  }
+}
+
+
 /* universal */
+
 
 body {
   padding-top: 60px;
@@ -23,7 +42,9 @@ textarea {
   margin-bottom: 10px;
 }
 
+
 /* typography */
+
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -42,13 +63,15 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #887894;
+  color: #777;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
+
+
 
 /* header */
 
@@ -74,15 +97,15 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  color: #FFFAFA;
 }
 
 footer a {
-  color: #555;
+  color: #FFFFFF;
 }
 
 footer a:hover {
-  color: #222;
+  color: #98FB98;
 }
 
 footer small {
@@ -98,3 +121,4 @@ footer ul li {
   float: left;
   margin-left: 15px;
 }
+

@@ -1,30 +1,24 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-
-    <!-- 追記ここから-->
-    <div class="navbar-header">
-
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- 追記ここまで-->
-
-      <%= link_to "E-plate app", root_path, id: "logo" %>
-
-    <!-- 追記ここから-->
-    </div>
-    <!-- 追記ここまで-->
-
-    <nav>
-      <!-- ulタグ内に「id="navbar"」を追記、classに「navbar-collapse collapse」を追記 -->
-      <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
-        <li><%= link_to "Home",   root_path %></li>
-        <li><%= link_to "Help",   '#' %></li>
-        <li><%= link_to "Log in", '#' %></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample7">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				E-Plate
+			</a>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="navbarEexample7">
+			<ul class="nav navbar-nav">
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">Help</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+			<p class="navbar-text navbar-right">ようこそ <a href="#" class="navbar-link">ゲスト</a> さん。</p>
+		</div>
+	</div>
+</nav>

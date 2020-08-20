@@ -7,6 +7,7 @@ ruby '2.6.6'
 gem 'rails', '~> 6.0.3'
 gem 'bootstrap-sass', '~> 3.4.1' 
 gem 'sassc-rails', '>= 2.1.0'
+gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails' , '4.3.1'
 
 # Use postgresql as the database for Active Record
@@ -60,4 +61,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'slim-rails'
 gem 'html2slim'
-gem 'bootstrap'
