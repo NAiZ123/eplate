@@ -83,6 +83,5 @@ test:
 production:
   <<: *default
   database: eplate_production
-  #  username: eplate
-  username: postgres
+  username: eplate
   password: <%= ENV['EPLATE_DATABASE_PASSWORD'] %>
