@@ -7,7 +7,6 @@ ruby '2.6.6'
 gem 'rails', '~> 6.0.3'
 gem 'bootstrap-sass', '~> 3.4.1' 
 gem 'sassc-rails', '>= 2.1.0'
-gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails' , '4.3.1'
 
 # Use postgresql as the database for Active Record
@@ -36,6 +35,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'factory_bot_rails', '~> 4.11'
 end
 
 group :development do
