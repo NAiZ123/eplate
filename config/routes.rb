@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get  '/contact',to: 'static_pages#contact'
 
   namespace :admin do
-    root 'top#index'
+    resources 'users'
   end
 
 end
