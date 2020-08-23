@@ -11,17 +11,22 @@
         E-Plate
       </a>
     </div>	
-    <div class="collapse navbar-collapse" id="navbarEexample6">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="nav navbar-nav">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "help", help_path %></li>
+        <% if current_user %>
+          <li><%= link_to "Mypage", '#' %></li>
+        <% end %>
+
       </ul>
       <p class="navbar-text">ようこそ 
       <% if current_user %>
         <span class="glyphicon glyphicon-user" aria-hidden="true"></span>〇〇 さん</p>
         <p class="navbar-text navbar-right">
-        <a><%= link_to("ログアウト", logout_path, 
-                    { method: :delete, data: {confirm: "ログアウトしますか？"}, class: "nav-link"}) %></a>
+        <a><%= link_to("ログアウト", logout_path,
+                          { method: :delete, data:
+                          { confirm: "ログアウトしますか？"}, class: "nav-link"}) %></a>
       <% else %> 
         <span class="glyphicon glyphicon-user" aria-hidden="true"></span>ゲスト さん</p>
         <p class="navbar-text navbar-right">
