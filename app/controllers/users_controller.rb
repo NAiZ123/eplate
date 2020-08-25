@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  skip_before_action :login_required, only: [:new, :create, :show]
+  skip_before_action :login_required, only: [:new, :only]
 
   def show
     @user = User.find(params[:id])
@@ -11,8 +11,9 @@ class UsersController < ApplicationController
   end
   
   def create
-    @user = User.new(user_params)    # 実装は終わっていないことに注意!
+    @user = User.new(user_params)      
     if @user.save
+      log_in @user
       flash[:success] = "Welcome"
       redirect_to @user
     else
