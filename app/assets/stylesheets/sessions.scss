@@ -1,0 +1,74 @@
+/* グレー系 */
+
+$dark_gray: #666666;
+$gray: #cccccc;
+$light_gray: #eeeeee;
+$very_light_gray: #fafafa;
+
+/* シアン系 */
+
+$dark_cyan: #448888;
+$very_dark_cyan: darken($dark_cyan, 25%);
+
+/* 赤系 */
+$red: #cc0000;
+$pink: #ffcccc;
+
+/* 緑系 */
+$green: #00cc00;
+
+/* マージン、パディング */
+
+$narrow: 2px;
+$moderate: 6px;
+$wide: 10px;
+$very_wide: 20px;
+
+/* フォントサイズ */
+
+$tiny: 8px;
+$small: 10px;
+$normal: 12px;
+$large: 16px;
+$huge: 20px;
+
+/* 行の高さ */
+
+$standard_line_height: 16px;
+
+div#wrapper {
+  div#container {
+    div#form-group {
+      width: 400px;
+      margin: $wide * 2 auto;
+      padding: $wide * 2;
+      border-radius: $wide;
+      border: solid 4px $dark_cyan;
+      background-color: $very_light_gray;
+
+      h1 {
+        background-color: transparent;
+        color: $very_dark_cyan;
+        font-size: $huge;
+        font-weight: bold;
+      }
+
+      form {
+        div {
+          padding: $wide;
+          label {
+            display: block;
+            padding: $moderate 0;
+          }
+          input[type="text"], input[type="password"] {
+            padding: $wide;
+            width: 400px - $wide * 4;
+          }
+          input[type="submit"] {
+            padding: $wide $wide * 2;
+          }
+        }
+      }
+    }
+  }
+}

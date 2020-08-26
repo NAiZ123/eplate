@@ -11,6 +11,8 @@ class SessionsController < ApplicationController
     #if user&.authenticate(session_params[:password])      
     if user && user.authenticate(params[:session][:password])
       log_in user
+      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
+      session[:last_access_time] = Time.current
       redirect_to user, notice: 'ログインしました。'
     else
       flash.now[:danger] = 'Invalid email/password combination'
@@ -19,7 +21,7 @@ class SessionsController < ApplicationController
   end
   
   def destroy
-    reset_session
+    reset_session  if logged_in?
     redirect_to root_path, notice: "ログアウトしました。"
   end
 
