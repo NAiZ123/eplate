@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
   end
   
   def destroy
-    reset_session  if logged_in?
+    log_out if logged_in?
     redirect_to root_path, notice: "ログアウトしました。"
   end
 

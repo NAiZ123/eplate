@@ -25,6 +25,7 @@ class ApplicationController < ActionController::Base
       if session[:last_access_time] > TIMEOUT.ago
         session[:last_access_time] = Time.current
       else
+        forget(current_user)
         session.delete(:user_id)
         flash.alert = "セッションがタイムアウトしました。"
         redirect_to root_path
