@@ -1,7 +1,14 @@
 class UsersController < ApplicationController
 
   skip_before_action :login_required, only: [:new, :create]
-  before_action :correct_user,   only: [:show, :edit, :update]
+  before_action :correct_user,   only: [:edit, :update]
+
+  def index
+    @users = User.page(params[:page])
+    #ソート機能追加予定
+    #ユーザー一覧ではなく記事一覧に変更予定
+  end
+
 
   def show
     @user = User.find(params[:id])

@@ -9,6 +9,8 @@ gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails' , '4.3.1'
 gem 'rails-i18n'
+gem 'kaminari'
+gem 'faker'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'

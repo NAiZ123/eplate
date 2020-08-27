@@ -211,3 +211,82 @@ input {
   width: auto;
   margin-left: 0;
 }
+
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+/* pagination */
+
+/* グレー */
+
+$dark_gray: #666666;
+$gray: #cccccc;
+$light_gray: #eeeeee;
+$very_light_gray: #fafafa;
+
+/* マゼンタ */
+
+$dark_magenta: #884488;
+$very_dark_magenta: darken($dark_magenta, 25%);
+
+/* 赤系 */
+$red: #cc0000;
+$pink: #ffcccc;
+
+/* 緑系 */
+$green: #00cc00;
+
+/* マージン、パディング */
+
+$narrow: 2px;
+$moderate: 6px;
+$wide: 10px;
+$very_wide: 20px;
+
+/* フォントサイズ */
+
+$tiny: 8px;
+$small: 10px;
+$normal: 12px;
+$large: 16px;
+$huge: 20px;
+
+/* 行の高さ */
+
+$standard_line_height: 16px;
+
+nav.pagination {
+  margin: $moderate 0;
+  padding: $moderate 0;
+  display: inline-block;
+  border-top: solid $very_light_gray 1px;
+  border-bottom: solid $very_light_gray 1px;
+  span.page, span.first, span.prev, span.next, span.last {
+    display: inline-block;
+    background-color: $light_gray;
+    padding: $narrow $moderate;
+    a {
+      text-decoration: none;
+    }
+  }
+  span.current {
+    background-color: $dark_gray;
+    color: $light_gray;
+  }
+  span.disabled {
+    color: $gray;
+  }
+  span.gap {
+    background-color: transparent;
+  }
+}
