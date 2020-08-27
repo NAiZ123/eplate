@@ -13,7 +13,8 @@ class SessionsController < ApplicationController
       log_in user
       params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       session[:last_access_time] = Time.current
-      redirect_to user, notice: 'ログインしました。'
+      flash.now[:success] = 'ログインしました。'
+      redirect_back_or user
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render :new

@@ -14,7 +14,12 @@ class ApplicationController < ActionController::Base
   end
 
   private def login_required
-    redirect_to login_path unless current_user 
+    
+    unless current_user
+      store_location
+      flash[:danger] = "Please log in."
+      redirect_to login_path
+    end 
   end 
 
 

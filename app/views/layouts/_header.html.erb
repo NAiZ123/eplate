@@ -11,9 +11,12 @@
         <span class="icon-bar"></span>
 	<span class="icon-bar"></span>
       </button>
- 
-      <a><%= link_to("E-Plate", login_path, {class: "navbar-brand"}) %></a>
-
+      
+      <% if current_user %>
+        <a><%= link_to("E-Plate", current_user, {class: "navbar-brand"}) %></a>
+      <% else %>
+        <a><%= link_to("E-Plate", login_path, {class: "navbar-brand"}) %></a>
+      <% end %>
     </div>	
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="nav navbar-nav">
@@ -21,7 +24,7 @@
         <li><%= link_to "help", help_path %></li>
         <% if current_user %>
           <li><%= link_to "Profile", current_user %></li>
-          <li><%= link_to "Settings", '#' %></li>  
+          <li><%= link_to "Settings", edit_user_path(current_user) %></li>  
         <% end %>
 
       </ul>
