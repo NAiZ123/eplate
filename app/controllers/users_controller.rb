@@ -1,9 +1,7 @@
 class UsersController < ApplicationController
 
   skip_before_action :login_required, only: [:new, :create]
-  before_action :correct_user,   only: [:edit, :update]
-
-  before_action :admin_user,     only: :destroy
+  before_action :correct_user,   only: [:edit, :update, :destroy] 
 
   def index
     @users = User.page(params[:page])
@@ -63,10 +61,6 @@ class UsersController < ApplicationController
   def correct_user
     @user = User.find(params[:id])
     redirect_to(root_url) unless @user == current_user
-  end
-  
-  def admin_user
-    redirect_to(root_url) unless current_user.admin?
-  end
+  end 
 
 end
