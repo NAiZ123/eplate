@@ -1,4 +1,5 @@
 # e-plate
+https://e-plate.herokuapp.com/
 
 System
 ====
@@ -13,7 +14,7 @@ Vue.js
 Rspec
 Docker
 PostgreSQL
-Heroku (+ 無料SSL + お名前ドットコム)
+Heroku
 GitHub
 Circle CI/CD 
 Raspberry pi (30m アクセス)
