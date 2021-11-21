@@ -18,7 +18,6 @@ Heroku
 GitHub
 Circle CI/CD 
 Raspberry pi (30m アクセス)
-お名前ドットコム＋Cloudflare
 
 Overview
 
